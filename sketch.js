@@ -7,7 +7,7 @@ var obstaclesGroup, obstacle_img;
 
 var gameOver;
 var score=0;
-var touches = array[];
+var touches = [];
 
 function preload(){
   backImage=loadImage("jungle.jpg");
@@ -72,7 +72,7 @@ function draw() {
         default: break;
     }
   
-    if(touches[]; ||  keyDown("space")&& player.y >200 ) {
+    if(touches(length>0)||keydown("space")&&player.y>200)
       player.velocityY = -12;
     }
     player.velocityY = player.velocityY + 0.8;
