@@ -8,6 +8,7 @@ var obstaclesGroup, obstacle_img;
 var gameOver;
 var score=0;
 
+
 function preload(){
   backImage=loadImage("jungle.jpg");
   player_running = loadAnimation("Monkey_01.png","Monkey_02.png","Monkey_03.png","Monkey_04.png","Monkey_05.png","Monkey_06.png","Monkey_07.png","Monkey_08.png","Monkey_09.png","Monkey_10.png");
@@ -71,7 +72,7 @@ function draw() {
         default: break;
     }
   
-    if(keydown(space)&&player.y>200)
+    if(keyDown("space")&& player.y >200 ) {
       player.velocityY = -12;
     }
     player.velocityY = player.velocityY + 0.8;
@@ -94,7 +95,7 @@ function draw() {
   stroke("white");
   textSize(20);
   fill("white");
-  text("Score: "+ score,50,50);
+  text("Score: "+ score, 500,50);
 }
 
 function spawnFood() {
