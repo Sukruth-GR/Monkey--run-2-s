@@ -71,7 +71,7 @@ function draw() {
         default: break;
     }
   
-    if(keydown("space")&&player.y>200)
+    if(keydown(space)&&player.y>200)
       player.velocityY = -12;
     }
     player.velocityY = player.velocityY + 0.8;
