@@ -100,5 +100,5 @@ function draw() {
   stroke("white");
   textSize(22);
   fill("white");
-  text("Score : " + score, 30, 80)
+  text("Score : " + score, 30, 30)
 }
