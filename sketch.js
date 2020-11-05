@@ -95,7 +95,7 @@ function draw() {
   stroke("white");
   textSize(20);
   fill("white");
-  text("Score: "+ score, 500,50);
+  text("Score: "+ score,windowwidth/2,50);
 }
 
 function spawnFood() {
